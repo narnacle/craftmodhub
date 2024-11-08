@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftModHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CraftModHub</div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="nav-link">Downloads</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="spigot.html">Spigot</a></li>
+                        <li><a href="craftbukkit.html">CraftBukkit</a></li>
+                    </ul>
+                </li>
+                <li><a href="skripts.html">Skripts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Welcome to CraftModHub</h1>
+            <p>Your one-stop shop for Bukkit, Spigot, and custom Skripts!</p>
+            <div class="download-list">
+                <div class="card">
+                    <h3>Bukkit 1.21</h3>
+                    <a href="download/craftbukkit/craftbukkit-1.21.1.jar" class="btn download-btn">Download JAR</a>
+                </div>
+                <div class="card">
+                    <h3>Spigot 1.21</h3>
+                    <a href="download/spigot/spigot-1.21.1.jar" class="btn download-btn">Download JAR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skripts">
+        <h2>Useful Skripts</h2>
+        <div class="skripts-list">
+            <div class="card">
+                <h3>Auto-Messaging Skript</h3>
+                <p>Automatically sends chat messages to players at intervals.</p>
+                <a href="#" class="btn download-btn">Download Skript</a>
+            </div>
+            <div class="card">
+                <h3>Custom Permissions Skript</h3>
+                <p>Easily manage player permissions with custom settings.</p>
+                <a href="#" class="btn download-btn">Download Skript</a>
+            </div>
+        </div>
+        <a href="skripts.html" class="btn full-width-btn">View More Skripts</a>
+    </section>
+    <section id="contact">
+        <h2>Contact Us for Custom Skripts</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 CraftModHub. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
