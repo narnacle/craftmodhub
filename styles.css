@@ -18,20 +18,27 @@ header {
     color: #fff;
     padding: 15px 20px;
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Ensures vertical centering */
+}
+
+.navbar {
+    display: flex;
+    flex: 1;
     align-items: center;
 }
 
 .navbar .logo {
     font-size: 24px;
     font-weight: bold;
+    margin-right: auto; /* Ensures the logo stays on the left */
 }
 
 .nav-links {
     list-style: none;
     display: flex;
     gap: 15px;
-    margin-left: auto; /* Ensures the nav-links align to the right */
+    margin-left: auto !important; /* Strongly forces the alignment */
+    align-items: center;
 }
 
 .nav-links li {
@@ -95,12 +102,12 @@ header {
 
 .hero-text h1 {
     font-size: 48px;
-    margin-bottom: 20px;
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 .hero-text p {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Add 40px bottom margin */
 }
 
 .download-list {
@@ -193,40 +200,37 @@ h2 {
     background: #0056b3;
 }
 
-/* Form Styles */
-form {
-    max-width: 500px;
+/* Contact Section Customization */
+#contact {
+    background: #f0f8ff; /* Example background color */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    margin-bottom: 20px;
+}
+
+/* Fiverr Ad Customization */
+.fiverr-ad {
+    max-width: 600px;
     margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
 }
 
-form label {
-    display: block;
-    margin-bottom: 5px;
+.fiverr-ad a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    display: inline-block;
-    width: 100%;
-    background: #007bff;
-    color: #fff;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background: #0056b3;
+.fiverr-ad a:hover {
+    color: #0056b3;
 }
 
 /* Footer Styles */
