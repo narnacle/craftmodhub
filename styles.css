@@ -100,6 +100,10 @@ header {
     padding: 20px;
 }
 
+.hero.small-hero {
+    height: 40vh; /* Smaller height for other pages like spigot.html */
+}
+
 .hero-text h1 {
     font-size: 48px;
     margin-bottom: 0; /* Remove bottom margin */
@@ -153,8 +157,17 @@ header {
     transition: background 0.3s;
 }
 
+.card .broken-btn {
+    background: #ff0000;
+    color: #fff;
+}
+
 .card .btn:hover {
     background: #0056b3;
+}
+
+.card .broken-btn:hover {
+    background: #750000;
 }
 
 .card:hover {
@@ -178,6 +191,20 @@ h2 {
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
+}
+
+/* Skripts List Adjustment for 4 Cards per Row */
+.skripts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skripts-list .card {
+    flex: 0 0 calc(25% - 20px); /* 4 cards per row with 20px gap */
+    max-width: calc(25% - 20px);
+    box-sizing: border-box;
 }
 
 /* Skripts Section Extra Button */
@@ -259,4 +286,20 @@ footer {
     padding: 10px 20px;
     background: #333;
     color: #fff;
+}
+
+/* Spigot Buttons Styles */
+.version-card .btn {
+    display: inline-block;
+    margin: 10px 5px 0;
+    padding: 10px 15px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.version-card .btn:hover {
+    background: #0056b3;
 }
